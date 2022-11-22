@@ -1,0 +1,83 @@
+
+
+#about {
+  overflow: hidden;
+}
+#about h2 {
+  padding: 50px 0 25px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+#about h2::before {
+  background: #000 none repeat scroll 0 0;
+  bottom: 9px;
+  content: "";
+  height: 2px;
+  position: absolute;
+  width: 100%;
+left:0;
+}
+#about h2::after {
+  background: #ffa100 none repeat scroll 0 0;
+  bottom: 9px;
+  content: "";
+  height: 2px;
+  position: absolute;
+  right: 0;
+  width: 50%;
+  z-index: 999;
+}
+#about p {
+  font-size: 16px;
+  padding: 10px 0;
+  text-align: left;
+}
+/*----------- team ------------*/
+
+#team {
+ /* background: url("team-bg.jpg") no-repeat scroll center bottom / cover ; */
+  color: rgb(11, 3, 3);
+  overflow: hidden;
+padding:100px 0 220px;
+  transition: all 0.35s ease 0s;
+}
+.t-box {
+  background: rgb(244, 241, 241) none repeat scroll 0 0;
+  color: #000;
+  float: left;
+  padding: 0 0 22px;
+  text-align: center;
+  width: 100%;
+}
+.timg > img {
+  width: 100%;
+}
+.t-box .social-links {
+padding:0px;
+margin:20px 0 0 0px;  
+}
+.t-box .social-links > li {
+  display: inline;
+  font-size: 25px;
+  padding: 8px;
+}
+.t-box .social-links a {
+  color: #ffa100;
+}
+.t-box .social-links a:hover {
+  color: rgb(247, 95, 95);
+}
+.timg {
+  position: relative;
+  transition: all 0.35s ease 0s;
+}
+.timg:hover::after {
+  background: rgba(222, 27, 27, 0.5) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
